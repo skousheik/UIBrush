@@ -1,0 +1,429 @@
+.slider-section{
+}
+
+/*.slider-btn{
+	border: 2px solid #43C6D7;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	font-weight: 600;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}*/
+
+.slider-btn:hover{
+	color: #fff;
+}
+
+.slider-btn{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	font-weight: 600;
+	background-color: #43C6D7;
+	
+	animation-name: flash;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	//Firefox 1+
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	//Safari 3-4
+	-moz-animation-name: flash;
+	-moz-animation-duration: 3s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Firefox 1+
+@-webkit-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Safari 3-4
+@-moz-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover  {
+    color: #43C6D7;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #43C6D7;
+    color: #fff;
+
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #43C6D7;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #43C6D7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-brand span{
+	color: #fff;
+}
+
+.navbar-collapse.in {
+    background-color: #3f3f3fe6;
+}
+
+.affix{
+
+	background-color: #3f3f3fe6;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    line-height: 1;
+    width: 100%;
+    height: 530px;
+}
+
+.carousel-caption {
+
+    bottom: 35%;
+}
+
+.carousel-caption h1{
+
+     text-transform: uppercase;
+	font-weight: 600;
+	max-width: 530px;
+	margin: 0 auto;	
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+.about-us-section{
+
+    padding: 50px 0px;
+}
+
+.heading{
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h1{
+	
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.heading p{
+	
+    color: #959595;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about-us-img{
+
+}
+
+.about-us-content{
+
+}
+
+.about-us-content h3{
+	
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about-us-content span{
+	
+    background-color: #43c6d7;
+    width: 100px;
+    height: 3px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-us-content p{
+	
+    color: #959595;
+    margin-bottom: 18px;
+}
+
+.cmn-btn{
+
+    background-color: #43c6d7;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.portfolio-section{
+	background-color: #eee;
+	padding: 50px 0px;
+}
+
+.portfolio{
+
+    margin-bottom: 30px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 9px #5c5c5c;
+}
+
+.portfolio-img{
+
+    position: relative;
+}
+
+.portfolio-img:after{
+
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #12121280;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.portfolio:hover .portfolio-img:after{
+
+	opacity: 1;
+}
+
+.portfolio-img img{
+
+}
+
+.portfolio-img .btn-hvr{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    z-index: 1;
+}
+
+.portfolio:hover .btn-hvr{
+	
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.portfolio .list-inline{
+
+    padding: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.portfolio .list-inline li{
+	
+    width: 50%;
+    float: left;
+}
+
+.portfolio .list-inline li strong{
+	
+}
+
+.portfolio .list-inline li span{
+	
+    float: right;
+    color: #959595;
+}
+
+.portfolio:hover .list-inline{
+	
+    color: #43c6d7;
+}
+
+.services-section{
+
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.services{
+
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px #d4d4d4;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.services:hover{
+    color: #fff;
+    background-color: #43c6d7;
+}
+
+.services i{
+
+    font-size: 25px;
+    color: #43c6d7;
+}
+
+.services:hover i{
+
+    color: #fff;
+}
+
+.services h3{
+
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.services span{
+
+    height: 2px;
+    display: block;
+    width: 50px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.services:hover span{
+    
+    background-color: #959595;
+}
+
+.services p{
+
+    font-size: 12px;
+}
+
+.services button{
+	
+    border-radius: 0;
+    background-color: #4b4b4b;
+    color: #fff;
+    padding: 5px 21px;
+    text-transform: capitalize;
+}
+
+.services:hover button{
+	
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-us-section{
+	background-color: #eee;
+	padding: 50px 0;
+}
+
+.info-part{
+
+}
+
+.info-part h3{
+	
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-part span{
+	
+    height: 3px;
+    width: 150px;
+    background-color: #43c6d7;
+    display: block;
+}
+
+.info-part p{
+	
+    color: #959595;
+    margin-top: 20px;
+}
+
+.info-part h4{
+	
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.info-part address{
+	
+    color: #959595;
+}
+
+.form-part{
+
+    padding-top: 10px;
+}
+
+footer{
+
+    background-color: #43c6d7;
+    text-align: center;
+    color: #fff;
+}
+
+footer p{
+	
+    margin-top: 10px;
+}
